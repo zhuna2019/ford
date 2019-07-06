@@ -1,0 +1,9 @@
+*{
+    margin:0px;padding:0px;
+}
+.nav-item img{
+    width:10%;
+}
+.list-unstyled a{
+    text-decoration: none;
+}

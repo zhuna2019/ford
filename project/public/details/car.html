@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--设置视口-->
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <!-- 导入css-->
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../main.css"/>
+    <link rel="stylesheet" href="../css/car.css"/>
+    <link rel="stylesheet" href="../css/comm.css"/>
+    <!-- 导入3个js,有顺序要求-->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container bg-white">
+    <!--1轮播图-->
+    <!-- carousle相对定位-->
+    <div id="demo" class="carousel w-100" data-ride="carousel">
+        <!-- 1carousle-inner轮播->图片溢出隐藏 w-00-->
+        <div  class="carousel-inner">
+            <!-- carousle-iitem ->display：none-->
+            <!-- carousle-iitem active->display：block-->
+            <div class="carousel-item active ">
+                <img class="w-100  " src="d_image/image.imgs.full.high(1).jpg"/>
+                <a id="nav1" class=" btn  p-0 d-block text-center  " href="#">精彩展示
+                </a>
+            </div>
+            <div class="carousel-item ">
+                <img class="w-100" src="d_image/image.imgs.full.high.jpg"/>
+                <a id="nav2" class=" btn  p-0 d-block text-center  " href="#">预约试驾
+                </a>
+            </div>
+        </div>
+        <!-- 2左右箭头-->
+        <div>
+            <a data-slide="next" href="#demo" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+            <a data-slide="prev" href="#demo" class="carousel-control-next">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+
+        </div>
+        <!-- 3播放指示器-->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+        </ul>
+    </div>
+    <!-- 2产品详情-->
+    <div class="row pro_price table-bordered m-0">
+        <div class="col-5  px-0 ml-3 ">
+            <p class="font-small text-muted ml-4 mt-3 mb-0">官方指导价</p>
+            <p class="price ml-4 mb-1">￥99,800元 - ￥149,800元</p>
+            <div class="mb-3 ml-4" href="#">
+                <a class="btn text-white" href="#">
+                    进入福特商城       <br/>
+                    查询经销商报价
+                </a>
+            </div>
+        </div>
+        <div class="col-5 table-bordered px-0 row">
+            <div class="col-4 px-0 mt-4 text-center">动力系统</div>
+            <div class="col-4 px-0 mt-4 text-cente">
+                <p class="pb-3">EcoBoost <sup>®</sup>125</p>
+                <p>1.6L&nbsp;&nbsp;&nbsp;&nbsp;Ti-VCT</p>
+            </div>
+            <div class="col-4 px-0 mt-4 text-cente">EcoBoost <sup>®</sup>180</div>
+        </div>
+        <div class="col-2  px-0 ">
+            <p class="mt-4 ml-5 mb-1">车型</p>
+            <h3 class="mt-2 ml-5 ">两厢</h3>
+        </div>
+    </div>
+    <!-- 精彩展示-->
+    <div class="desktop hideForMobile" >
+        <h1 class="text-center"><span class="text-center">精彩展示</span></h1>
+    </div>
+    <div class="form-inline">
+     <div class="col-12 form-inline out_door">
+         <div class="col-3 px-0 "><img class="w-100 " src="d_image/1469182685984.jpeg" alt=""/></div>
+         <div class="col-3 px-0"><img class="w-100" src="d_image/1469182816025.jpeg" alt=""/></div>
+         <div class="col-3 px-0"><img class="w-100" src="d_image/1509946402408.jpeg" alt=""/></div>
+         <div class="col-3 px-0"><img class="w-100" src="d_image/1474466819700.jpeg" alt=""/></div>
+     </div>
+        <div class="col-12 form-inline out_door">
+            <div class="col-3 px-0"><img class="w-100 scale" src="d_image/1476887800321.jpeg" alt=""/></div>
+            <div class="col-3 px-0"><img class="w-100 scale" src="d_image/1469183072623.jpeg" alt=""/></div>
+            <div class="col-3 px-0"><img class="w-100 scale" src="d_image/1469183842515.jpeg" alt=""/></div>
+            <div class="col-3 px-0"><img class="w-100 scale" src="d_image/1470374340396.jpeg" alt=""/></div>
+        </div>
+    </div>
+    <!-- 缤纷色彩-->
+    <div class="desktop hideForMobile bg-white" >
+        <h1 class="text-center"><span class="text-center">360 <sup>o</sup>&&nbsp;缤纷色彩</span></h1>
+    </div>
+    <div class="w-100 bg-white">
+    <ul class="nav nav-tabs  ">
+        <li class="nav-item text-center active  ">
+            <a data-toggle="tab" href="#tab1" class="nav-link border-bottom ">外观-两厢</a>
+        </li>
+        <li class="nav-item ">
+            <a data-toggle="tab" href="#tab2" class="nav-link border-bottom  ">内饰</a>
+        </li>
+        <li class="nav-item ">
+            <a data-toggle="tab" href="#tab3" class="nav-link border-bottom  ">缤纷色彩</a>
+        </li>
+    </ul>
+    </div>
+    <div  class="tab-content out_door ">
+        <div id="tab1" class="tab-pane active"><img class="w-100 " src="d_image/1547199447970.jpg" alt=""/></div>
+        <div id="tab2" class="tab-pane "><img class="w-100 " src="d_image/1474556163447.jpg" alt=""/></div>
+        <div id="tab3" class="tab-pane out_door" >
+            <div class="text-center  bg-white "><span class="font-weight-bold">珍珠白</span></div>
+           <img class="w-100 " src="d_image/1542799345020.jpg" alt="">
+           <div class="bg-white text-center">
+               <img class="rounded-circle bg-white mr-3" src="d_image/1542799344300.jpg" alt=""/><img class="rounded-circle mr-3 " src="d_image/1542799365309.jpg" alt=""/><img  class="rounded-circle bg-white" src="d_image/1542799377775.jpg" alt=""/>
+           </div>
+        </div>
+        <div class="text-center bg-white ">
+            <div class="python" ><h2 class="mt-5"  >智能科技</h2></div>
+            <div ><h6 class="mt-5">当超越变成本能反应，行是一种力量 ！</h6></div>
+            <div class="row mt-5 out_door">
+                <div class="col-4 text-center ">
+                    <img class="w-50" src="d_image/1543402480642.webp" alt=""/>
+                    <h5 class="mt-5 border-bottom pb-3">自动泊车系统&多方位泊车雷达</h5>
+                </div>
+                <div class="col-4">
+                    <img class="w-50" src="d_image/1497323813702.webp" alt=""/>
+                    <h5 class="mt-5 border-bottom pb-3">智能无钥匙进入系统</h5>
+                </div>
+                <div class="col-4">
+                    <img class="w-50" src="d_image/1497323813702.webp" alt=""/>
+                    <h5 class="mt-5 border-bottom pb-3">全系标配8寸电容触控大屏</h5>
+                </div>
+            </div>
+            <!--智能科技-->
+            <div><a class="btn  python_w mb-3" href="#">搜索智能科技</a></div>
+        </div>
+
+    </div>
+    <!-- 展图-->
+    <div class="out_door"> 
+        <div><img class="w-100" src="d_image/1543400282960.webp" alt=""/></div>
+    </div>
+    <!-- 气质超凡-->
+    <div class="form-inline bg-white inner_door">
+        <div class="col-6"><img class="w-100" src="d_image/1509969068945.webp" alt=""/>
+        </div>
+        <div class="col-6 ">
+            <h2 class="mb-5">气质超凡</h2>
+            <p class="font-small  ">采用福特最新家族式设计语言，六边形镀铬前格栅凸显超凡气质，前脸一改以往圆润饱满的风格，而是运用了更锋利的线条，更显凌厉动感。
+            </p>
+            <a class="btn button_w mb-3 mt-2" href="#">探索超凡品质</a>
+        </div>
+    </div>
+    <!-- 绿色节能-->
+    <div class="form-inline bg-white inner_door">
+        <div class="col-6 ">
+            <h2 class="mb-5">绿色节能</h2>
+            <p class="font-small  ">当绿色成为心之所向，行是一种信念！</p>
+            <a class="btn button_w mb-3 mt-2" href="#">探索绿色节能</a>
+        </div>
+        <div class="col-6"><img class="w-100" src="d_image/1497322284575.webp" alt=""/>
+        </div>
+    </div>
+    <!-- 安全保障-->
+    <div class=" position-relative mt-5 out_door">
+
+        <div class=" position-absolute mt-3 text-center w-100" >
+            <h2 class=" text-white ">安全保障</h2>
+            <p class="font-small text-white ">当安全时刻如影相随，行是一种掌控！</p>
+            <a class="btn python_w  " href="#">探索安全保障</a>
+        </div>
+        <img class="w-100" src="d_image/image.imgs.full.high.webp" alt=""/>
+    </div>
+    <!--车型对比-->
+    <!-- carousle相对定位-->
+    <div id="demo2" class="carousel w-100 mb-5 p-5 bg-white"
+         data-ride="carousel">
+
+        <!-- 1carousle-inner轮播->图片溢出隐藏 w-00-->
+        <div  class="carousel-inner">
+            <div class="heading px-0 bg-white"><h2 class=" bg-white mb-0 pb-5">经典福克斯车型</h2></div>
+            <!-- carousle-iitem ->display：none-->
+            <!-- carousle-iitem active->display：block-->
+            <div class="carousel-item active">
+            <div class="row m-0 bg-white">
+                <div class="col-3">
+                    <ul class="list-group ">
+                        <li class="list-group-item p-0 border-0 text-center "><img class="w-100" src="d_image/hatch-1-6L-ambiente-at.webp"alt=""/></li>
+                        <li class="list-group-item p-0 border-0 text-center " ><h6 class="font-weight-light mb-0"><a class="  bg-white text-primary" href="">经典福克斯两厢 1.6L手动舒适型 (智行版)</a></h6></li>
+                        <li class="list-group-item p-0 border-0 text-center "><a class=" bg-white text-muted  " href="">建议零售价:99,800 元</a></li>
+                        <li class="list-group-item p-0 border-0 text-center"><a class="bg-white text-muted" href="">动力系统:1.6L Ti-VCT双独立式凸 轮轴可变正时发动机</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <ul class="list-group ">
+                        <li class="list-group-item p-0 border-0 text-center "><img class="w-100" src="d_image/hatch-1-6L-ambiente-at.webp"alt=""/></li>
+                        <li class="list-group-item p-0 border-0 text-center " ><h6 class="font-weight-light mb-0"><a class="bg-white text-primary" href="">经典福克斯两厢 1.6L自动舒适型 (智行版)</a></h6></li>
+                        <li class="list-group-item p-0 border-0 text-center "><a class="bg-white text-muted  " href="">建议零售价:110,800 元</a></li>
+                        <li class="list-group-item p-0 border-0 text-center"><a class="bg-white text-muted" href="">动力系统:1.6L Ti-VCT双独立式凸 轮轴可变正时发动机</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 ">
+                    <ul class="list-group ">
+                        <li class="list-group-item p-0 border-0 text-center "><img class="w-100" src="d_image/hatch-1-6L-ambiente-at.webp"alt=""/></li>
+                        <li class="list-group-item p-0 border-0 text-center " ><h6 class="font-weight-light mb-0"><a class="bg-white text-primary" href="">经典福克斯两厢 1.6L手动风尚 (智行版)</a></h6></li>
+                        <li class="list-group-item p-0 border-0 text-center "><a class="bg-white text-muted  " href="">建议零售价:111,800 元</a></li>
+                        <li class="list-group-item p-0 border-0 text-center"><a class="bg-white text-muted" href="">动力系统:1.6L Ti-VCT双独立式凸 轮轴可变正时发动机</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 ">
+                    <ul class="list-group ">
+                        <li class="list-group-item p-0 border-0 text-center "><img class="w-100" src="d_image/hatch-1-6L-ambiente-at.webp"alt=""/></li>
+                        <li class="list-group-item p-0 border-0 text-center " ><h6 class="font-weight-light mb-0"><a class="bg-white text-primary" href="">经典福克斯两厢 1.6L自动风尚型 (智行版)</a></h6></li>
+                        <li class="list-group-item p-0 border-0 text-center "><a class="bg-white text-muted  " href="">建议零售价:122,800 元</a></li>
+                        <li class="list-group-item p-0 border-0 text-center"><a class="bg-white text-muted" href="">动力系统:1.6L Ti-VCT双独立式凸 轮轴可变正时发动机</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+            <div class="carousel-item ">
+                <div class="row m-0 bg-white">
+                    <div class="col-3">
+                        <ul class="list-group ">
+                            <li class="list-group-item p-0 border-0 text-center "><img class="w-100" src="d_image/hatch-1-6L-ambiente-at.webp"alt=""/></li>
+                            <li class="list-group-item p-0 border-0 text-center " ><h6 class="font-weight-light mb-0"><a class="  bg-white text-primary" href="">经典福克斯两厢 EcoBoost®125手动超能风尚型(智行版)</a></h6></li>
+                            <li class="list-group-item p-0 border-0 text-center "><a class=" bg-white text-muted  " href="">建建议零售价:111,800 元 </a></li>
+                            <li class="list-group-item p-0 border-0 text-center"><a class="bg-white text-muted" href="">动力系统:EcoBoost®125涡轮增压直喷发动机  </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul class="list-group ">
+                            <li class="list-group-item p-0 border-0 text-center "><img class="w-100" src="d_image/hatch-1-6L-ambiente-at.webp"alt=""/></li>
+                            <li class="list-group-item p-0 border-0 text-center " ><h6 class="font-weight-light mb-0"><a class="  bg-white text-primary" href="">经典福克斯两厢 EcoBoost®125自动超能风尚型(智行版)</a></h6></li>
+                            <li class="list-group-item p-0 border-0 text-center "><a class=" bg-white text-muted  " href="">建建议零售价:122,800 元 </a></li>
+                            <li class="list-group-item p-0 border-0 text-center"><a class="bg-white text-muted" href="">动力系统:EcoBoost®125涡轮增压直喷发动机  </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul class="list-group ">
+                            <li class="list-group-item p-0 border-0 text-center "><img class="w-100" src="d_image/hatch-1-6L-ambiente-at.webp"alt=""/></li>
+                            <li class="list-group-item p-0 border-0 text-center " ><h6 class="font-weight-light mb-0"><a class="  bg-white text-primary" href="">经典福克斯两厢 EcoBoost®180自动精英型</a></h6></li>
+                            <li class="list-group-item p-0 border-0 text-center "><a class=" bg-white text-muted  " href="">建建议零售价:133,800 元 </a></li>
+                            <li class="list-group-item p-0 border-0 text-center"><a class="bg-white text-muted" href="">动力系统:EcoBoost®180涡轮增压直喷发动机  </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul class="list-group ">
+                            <li class="list-group-item p-0 border-0 text-center "><img class="w-100" src="d_image/hatch-1-6L-ambiente-at.webp"alt=""/></li>
+                            <li class="list-group-item p-0 border-0 text-center " ><h6 class="font-weight-light mb-0"><a class="  bg-white text-primary" href="">经典福克斯两厢 EcoBoost®180自动运动型</a></h6></li>
+                            <li class="list-group-item p-0 border-0 text-center "><a class=" bg-white text-muted  " href="">建建议零售价:149,800 元 </a></li>
+                            <li class="list-group-item p-0 border-0 text-center"><a class="bg-white text-muted" href="">动力系统:EcoBoost®180涡轮增压直喷发动机  </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- 2左右箭头-->
+        <div>
+            <a data-slide="next" href="#demo2" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+            <a data-slide="prev" href="#demo2" class="carousel-control-next">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+
+        </div>
+        <!-- 3播放指示器-->
+        <ul class="carousel-indicators pt-5 ">
+            <li data-target="#demo2" data-slide-to="0" class="active"></li>
+            <li data-target="#demo2" data-slide-to="1"  class="active" ></li>
+        </ul>
+    </div>
+    <!-- 可能感兴趣的车-->
+    <div class="bg-white pb-5">
+        <h1 class="mb-5 text-center">可能你也对他们感兴趣</h1>
+        <div class="form-inline d-flex ">
+           <div class="col-6  text-right">
+               <img class="w-50 position-relative" src="d_image/yml-new-mondeo (1).webp" alt=""/>
+               <p class="font-small text-primary text-right mr-5 "><a href="#">新款蒙迪欧</a></p>
+               <p >建议零售价￥179,800</p>
+            </div>
+            <div class="col-6  ">
+                <img class="w-50" src="d_image/taurus (1).webp" alt=""/>
+                <p class="font-small text-primary text-center mr-5 "><a href="#">福特金牛座</a></p>
+                <p class="text-center">建议零售价￥234,800</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--footer-->
+<footer>
+    <iframe class="my_footer w-100" src="../footer.html" frameborder="0" scrolling="no"></iframe>
+</footer>
+</body>
+</html>

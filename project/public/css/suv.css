@@ -1,0 +1,12 @@
+.carousel-indicators>li{
+    width:0.8rem;
+    height:0.8rem;
+    background-color: #0d96cd !important;
+}
+.carousel-indicators .active{
+
+    background-color: #fff !important;
+}
+.desktop>p>a{
+
+}

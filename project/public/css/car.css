@@ -1,0 +1,79 @@
+.carousel-item>#nav2{
+    width:18%;
+    position: absolute;
+    top:36%;
+    left:80%;
+}
+.carousel-indicators li{
+    width:0.6rem;
+    height:0.6rem;
+    border-color:#0d96cd;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right:3px;
+    margin-left:3px;
+}
+.pro_price a{
+    width:35%;
+    height:25%;
+    background-color:#2d96cd;
+}
+a:hover{
+    background-color: transparent;
+    list-style: none;
+}
+.desktop{
+    padding:60px 200px 30px;
+}
+img.scale:hover{
+    transform:scale(2);
+}
+div>ul.nav-tabs{
+    width:25%;
+    margin:0 auto;
+
+}
+.border-bottom {
+    border-bottom: 5px solid #000;
+}
+.tab-pane:last-child{
+    background-image:url(d_image/1542799345020.jpg);
+    background-size: 100%;
+}
+div>.rounded-circle{
+    width:3rem;height: 3rem;
+}
+.my_footer{ height:35rem;  }
+.python::before{
+    content: "";
+    display: table;
+}
+a.btn{
+
+    background-color:#2D96CD;
+    color:#fff;
+}
+a.btn:hover{
+    background-color:#fff;
+    color:#000;
+}
+.python_w{
+    width: 18% !important;
+}
+.button_w{
+    width:30% !important;
+}
+.list-group-item>h5{
+    color:#2D96CD;
+}
+
+
+.list-group-item>h6>a{
+    text-decoration:none;
+    color:#2D96CD !important;
+    font:16px Antenna !important;
+}
+.list-group-item>a{
+    text-decoration: none !important;
+    font:12px Antenna !important;
+}

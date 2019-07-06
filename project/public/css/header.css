@@ -1,0 +1,71 @@
+
+a{
+    color: #008cba;
+
+
+}
+.bg{
+    background-color: #fff;
+}
+a:hover{
+    text-decoration: none;
+    color:#000;
+}
+.model_shot{
+    width:75%;
+}
+.title_container{
+    color:#2d96cd;
+    font-size:16px;
+}
+.tile{
+    width:20%;
+}
+.font{
+    font-size: 16px;
+}
+.btn{
+    width:15rem;
+    height:3rem;
+    background-color:#2d96cd;
+    color:#fff;
+    text-align: center;
+    vertical-align:center;
+    
+
+}
+.btn:hover{
+  border:1px solid #000;
+}
+.button{
+    margin:100px;
+}
+#mymodal>.modal-dialog{
+    width:800px;
+    height:800px;
+
+}
+option{
+    width:100px;
+    height:20px;
+}
+#test_code{
+    width:25%;
+}
+.modal-body .nav-item{
+    width:200px;
+    
+}
+.nav-item input {
+    width:200px;
+    height:40px;
+}
+#parent button{
+    margin-top:300px;
+}
+.line{
+    margin-top: 200px;
+}
+.footer{
+  margin-right:180px;
+}

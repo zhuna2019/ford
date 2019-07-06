@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--设置视口-->
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <!-- 导入css-->
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/comm.css"/>
+    <link rel="stylesheet" href="../css/jingxiaoshang.css"/>
+    <!-- 导入3个js,有顺序要求-->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<body> 
+<div class="container">
+       <!-- 1头部标签-->
+        <div class="row w-100 m-0" >
+            <div class="item1 col-3  p-3 text-center ">
+                <a class=" text-white" href="#">经销商查询及招募</a>
+            </div>
+            <div class="item2 col-9  p-3 pr-5 text-right">
+                <a class="text-white font-small px-2 " href="#">长安福特经销商招募</a>
+                <a class="text-white font-small px-2 " href="#">江铃汽车福特品牌经销商</a>
+            </div>
+        </div>
+        <!-- 2轮播图 -->
+        <div class="banner ">
+            <img class="w-100" src="d_image/suv/locate-a-dealer-Latest.webp" alt=""/>
+              <!--3 经销商查询卡片 -->
+              
+                <div id="card">
+                    <button  data-toggle="collapse" data-target="#parent" class="select">经销商查询     
+                        </button>    
+                     <div id="parent" class="collapse"> 
+                            
+                            
+                                <!-- 第一个卡片位置 -->
+                                   <div class="card">
+                                           <div class="card-header">
+                                                 <input type="checkbox">
+                                                  <a href="#c1" data-toggle="collapse" class="card-link">您的位置</a>
+                                           </div>
+                                           <div id="c1"  class=" collapse">
+                                               <div  class="card-body">
+                                                  <select class="m-2 w-100 p-2" type="text" aria-placeholder="">
+                                                        <option value="0" checked>选择一个省市</option>
+                                                      <option value="1">浙江</option>
+                                                      <option value="2">安徽</option>
+                                                      <option value="3">上海</option>
+                                                      <option value="4">江苏</option>
+                                                  </select>
+                                                  <select class="m-2 p-2 w-100" type="text" >
+                                                        <option value="0" checked>选择一个地区</option>
+                                                        <option value="1">浙江</option>
+                                                        <option value="2">安徽</option>
+                                                        <option value="3">上海</option>
+                                                        <option value="4">江苏</option>
+                                                    </select>
+                                               </div>
+                                           </div>
+                                    </div>
+               
+                                     <!-- 第二个卡片位置 -->
+                                   <div class="card">
+                                           <div class="card-header">
+                                               <input type="checkbox">
+                                               <a href="#c2" data-toggle="collapse" class="card-link">选择车型</a>
+                                           </div>
+                                           <div id="c2"  class=" collapse">
+                                               <div  class="card-body">
+                                                    <select class="m-2 p-2 w-100" type="text" >
+                                                            <option value="0" checked>请选择一个车型</option>
+                                                            <option value="1">福克斯</option>
+                                                            <option value="2">福瑞斯</option>
+                                                            <option value="3">野马</option>
+                                                            <option value="4">翼虎</option>
+                                                        </select>
+                                               </div>
+                                           </div>
+                                   </div>
+                                
+                                    <!-- 第三个卡片位置 -->
+                                    <div class="card">
+                                           <div class="card-header">
+                                               <input type="checkbox">
+                                               <a href="#c3" data-toggle="collapse" class="card-link">经销商名称</a>
+                                           </div>
+                                           <div id="c3" class=" collapse">
+                                               <div  class="card-body">
+                                                  <input class="p-1 w-100" type="text" placeholder="请输入经销商名称">
+                                               </div>
+                                           </div>
+                                    </div>
+                         <a href="#" class="btn text-center text-white w-100  " >搜寻经销商</a>        
+                    </div>
+                       
+                     
+            </div>         
+       </div>
+     
+</div>
+
+</body>
+</html>

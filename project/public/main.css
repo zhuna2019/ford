@@ -1,0 +1,141 @@
+*{margin:0px;padding:0px;}
+.main-nav{
+    width:100%;
+    padding:18px 35px 0 77px;
+    position:relative;
+}
+div img{
+    width:15%;
+    margin-top:20
+}
+ul.nav-content{
+    position:absolute;
+    top:22%;
+    left:35%;
+}
+ul.nav-content a{color:#008CBA;}
+.carousel-control-next:first-child{
+    width:3%;
+    height:8%;
+    background-color:#0aa1ed;
+    top:41%;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+}
+.carousel-control-next:last-child{
+    width:3%;
+    height:8%;
+    background: rgba(0,0,0,2);
+    top:49%;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+}
+.carousel-indicators li{
+    width:0.6rem;
+    height:0.6rem;
+    border-radius:50%;
+    background-color: #fff;
+    margin-right:3px;
+    margin-left:3px;
+}
+.carousel-indicators .active{
+    background-color:#0aa1ed;
+}
+.carousel a{
+    width:15rem;
+    height:3rem;
+    line-height: 3rem;
+    font-size: 1em;
+    background-color: #2D96CD;
+    color:#fff;
+}
+.carousel-item>#nav1{
+    position: absolute;
+    top:43%;
+    left:8%;
+}
+.carousel-item>#nav2{
+    position: absolute;
+    top:43%;
+    left:8%;
+}
+.carousel-item>#nav3{
+    position: absolute;
+    top:55%;
+    right:6%;
+}
+.carousel-item>#nav4{
+    position: absolute;
+    top:60%;
+    left:6%;
+}
+button{
+    width:20%;
+    background-color:#2d96cd;
+}
+.foot-links li a{  color:#A8A8A8;
+    font-size:16px;}
+
+div.foot_middle{
+    width:100%;
+    height:50px;
+    background:#1B394E;
+    padding:25px 15px;
+}
+div.foot_bottom li{
+    font:12px Antenna;
+    color��#868686��
+}
+.foot .foot-search{
+    width:100%;
+    height:74px;
+    background:#343434;
+    padding:36px 25px 33px;
+}
+.heading{
+    margin-top: -1px;
+    padding:0px 72px;
+}
+.out_door>div{
+  
+    overflow: hidden;
+}
+.out_door>div>img{
+    transition:transform 1s ease;
+}
+.out_door>div img:hover{
+   
+    transform:scale(1.2);
+    
+}
+a.btn{color:#fff;}
+.btn:hover{background:#fff;
+color :#000;}
+.inner_door>div{
+  
+    overflow: hidden;
+}
+
+.inner_door>div img:hover{
+    transition: 5s ease-in-out;
+    transform:scale(1.2) rotateZ(360deg);
+}
+.box{
+    width:100%;
+    height:20%;
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    background:#333;
+    opacity: 0.6;
+   
+}
+.box:hover{
+    opacity:1;
+}
+.icon{
+    display:none;
+}
+.carousel:hover>.icon{
+    display:block;
+}

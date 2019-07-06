@@ -1,0 +1,34 @@
+.circle{
+    border: 1px solid #dee2e6 !important;
+    border-radius: 50%;
+}
+.product{
+    background-color:#0d96cd!important;
+}
+li>a{
+    text-decoration: none !important;
+}
+ul{
+    outline: none;
+}
+.car_full{
+    width:100%;
+    height:50px;
+    background-color:#0d96cd;
+    color:#fff;
+    display:none;
+}
+.desc_full:hover .car_full{
+    display:block;
+}
+.desc_full:hover{
+    border:1px solid #000;
+}
+.desc_full h5{
+    color:#0d96cd;
+}
+.car_full:hover{
+    color:#000;
+    background-color: #fff;
+    border:1px solid #000;
+}

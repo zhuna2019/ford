@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--设置视口-->
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <!-- 导入css-->
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/comm.css"/>
+    <link rel="stylesheet" href="../main.css"/>
+    <link rel="stylesheet" href="../css/suv.css"/>
+    <link rel="stylesheet" href="../css/car.css"/>
+    <!-- 导入3个js,有顺序要求-->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <!--1轮播图-->
+    <!-- carousle相对定位-->
+    <div id="demo" class="carousel w-100" data-ride="carousel">
+        <!-- 1carousle-inner轮播->图片溢出隐藏 w-00-->
+        <div  class="carousel-inner">
+            <!-- carousle-iitem ->display：none-->
+            <!-- carousle-iitem active->display：block-->
+            <div class="carousel-item active ">
+                <img class="w-100  " src="d_image/suv/image.imgs.full.high(1).jpg"/>
+                <a id="nav2" class=" btn  p-0 d-block text-center  " href="#">预约试驾
+                </a>
+            </div>
+            <div class="carousel-item ">
+                <img class="w-100" src="d_image/suv/image.imgs.full.high(2).jpg"/>
+            </div>
+            <div class="carousel-item ">
+                <img class="w-100" src="d_image/suv/image.imgs.full.high.jpg"/>
+            </div>
+        </div>
+        <!-- 2左右箭头-->
+        <div>
+            <a data-slide="next" href="#demo" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+            <a data-slide="prev" href="#demo" class="carousel-control-next">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+
+        </div>
+        <!-- 3播放指示器-->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+        </ul>
+    </div>
+    <!-- 2产品详情-->
+    <div class="row pro_price table-bordered m-0">
+        <div class="col-5  px-0 ml-3 ">
+            <p class="font-small text-muted ml-4 mt-3 mb-0">厂家建议零售价</p>
+            <p class="price ml-4 mb-1">￥169,800 元起</p>
+        </div>
+        <div class="col-5 table-bordered px-0 row">
+            <div class="col-4 px-0 mt-4 text-center">动力系统</div>
+            <div class="col-4 px-0 mt-4 text-cente">
+                <p class="pb-3">EcoBoost
+                     <sup>®</sup>GTDi</p>
+                <p>2.0L</p>
+            </div>
+            <div class="col-4 px-0 mt-4 text-center">
+                <p>EcoBoost<sup>®</sup>GTDi</p>
+                <p>1.5L</p>
+            </div>
+        </div>
+        <div class="col-2  px-0 ">
+            <p class="mt-4 ml-5 mb-1">座位数</p>
+            <h3 class="mt-2 ml-5 ">5</h3>
+        </div>
+    </div>
+    <!-- 互联网汽车智能系统-->
+    <div id="dem3" class="carousel w-100" data-ride="carousel">
+        <!-- 1carousle-inner轮播->图片溢出隐藏 w-00-->
+        <div  class="carousel-inner">
+            <!-- carousle-iitem ->display：none-->
+            <!-- carousle-iitem active->display：block-->
+            <div class="carousel-item active position-relative ">
+            <div class="position-absolute pt-3 pl-3">
+                <h4>
+                    互联网汽车智能系统
+                </h4>
+                <p class="m-0">
+                    智能语音
+                </p>
+                <p class="m-0">
+                    优化语音控制系统，可识别声音来源，通过语音指令 <br/>即可控制空调温度、地图导航，虾米在线音乐播放 <br/>，体验更轻松便捷。
+                </p>
+                <div class="">
+                    <a class="btn text-center" href="#">探索科技智慧</a>
+                </div>
+            </div>
+            <img class="w-100" src="d_image/suv/image.imgs.full.high(3).jpg"/>
+        </div>
+            <div class="carousel-item position-relative  ">
+                <div class="position-absolute pt-3 pl-3">
+                    <h4>
+                        电动大尺寸全景天窗
+                    </h4>
+                    <p class="m-0">
+                        电动开启超大面积的天窗，感受大自然带来的惬意。
+                    </p>
+                    <p class="m-0">
+                        可以全幅打开的遮阳帘和隐私玻璃，在保护私密性的<br/>同时 也提升舒适度。
+                    </p>
+                    <div>
+                        <a class="btn text-center" href="#">探索高端品质</a>
+                    </div>
+
+                </div>
+                <img class="w-100" src="d_image/suv/image.imgs.full.high(4).jpg"/>
+            </div>
+            <div class="carousel-item  position-relative">
+                <div class=" position-absolute pt-3 pl-3">
+                    <h4>
+                        EcoBoost®双涡流涡轮增压直喷发动机* *
+                    </h4>
+                    <p class="m-0">
+                        运用双涡流涡轮增压技术，减少气缸之间的排气干 <br/>扰，改善涡轮迟滞，提升引擎的动力响应速度，低 <br/>转速下，也能输出强大扭矩 。
+                    </p>
+                    <p class="m-0">
+                        * * EcoBoost® 245车型均配备此发动机
+                    </p>
+                    <div>
+                        <a class="btn text-center" href="#">探索澎湃动力</a>
+                    </div>
+                </div>
+                <img class="w-100" src="d_image/suv/image.imgs.full.high(5).jpg"/>
+            </div>
+            <div class="carousel-item position-relative  ">
+                <div class="position-absolute pt-3 pl-3 ">
+                    <h4>
+                        全系标配带防侧翻稳定控制技 <br/>术的Advance Trac®系统
+                    </h4>
+                    <p class="m-0">
+                        集合了ABS防抱死系统，电子制动力分配系统
+                    </p>
+                    <p>
+                        （EBD），牵引力控制系统（TCS），车身电子稳 <br/>定控制系统（ESC）以及防翻滚稳定控制系统
+                    </p>
+                    <p class="m-0">
+                        （RSC），有效防止刹车抱死，预防车辆甩尾、打 <br/>滑、侧翻，提升行驶稳定性。
+                    </p>
+                    <div>
+                        <a class="btn text-center" href="#">探索可靠保障</a>
+                    </div>
+                </div>
+                <img class="w-100" src="d_image/suv/image.imgs.full.high(6).jpg"/>
+            </div>
+        </div>
+        <!-- 2左右箭头-->
+        <div>
+            <a data-slide="next" href="#dem3" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+            <a data-slide="prev" href="#dem3" class="carousel-control-next">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+        </div>
+        <!-- 3播放指示器-->
+        <ul class="carousel-indicators">
+            <li data-target="#dem3" data-slide-to="0" class="active"></li>
+            <li data-target="#dem3" data-slide-to="1"></li>
+            <li data-target="#dem3" data-slide-to="2"></li>
+            <li data-target="#dem3" data-slide-to="3"></li>
+        </ul>
+    </div>
+    <!--车型对比-->
+    <div id="demo2"  class="carousel w-100 mb-5 p-5 bg-white"
+         data-ride="carousel">
+
+        <!-- 1carousle-inner轮播->图片溢出隐藏 w-00-->
+        <div  class="carousel-inner">
+            <div class="heading px-0 bg-white"><h2 class=" bg-white mb-0 pb-5">新福特翼虎车型</h2></div>
+            <!-- carousle-iitem ->display：none-->
+            <!-- carousle-iitem active->display：block-->
+            <div class="carousel-item active">
+                <div class="row m-0 bg-white">
+                    <div class="col-3">
+                        <ul class="list-group ">
+                            <li class="list-group-item p-0 border-0 text-center "><img class="w-100" src="d_image/suv/kuga-models.webp"alt=""/></li>
+                            <li class="list-group-item p-0 border-0 text-center " ><h6 class="font-weight-light mb-0"><a class="  bg-white text-primary" href="">EcoBoost® 180 两驱精翼型</a></h6></li>
+                            <li class="list-group-item p-0 border-0 text-center "><a class=" bg-white text-muted  " href="">建议零售价： ￥ 169,800 元 </a></li>
+                            <li class="list-group-item p-0 border-0 text-center"><a class="bg-white text-muted" href="">动力系统: 1.5L EcoBoost® </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul class="list-group ">
+                            <li class="list-group-item p-0 border-0 text-center "><img class="w-100" src="d_image/suv/kuga-models.webp"alt=""/></li>
+                            <li class="list-group-item p-0 border-0 text-center " ><h6 class="font-weight-light mb-0"><a class="bg-white text-primary" href="">EcoBoost® 180 两驱铂翼型</a></h6></li>
+                            <li class="list-group-item p-0 border-0 text-center "><a class="bg-white text-muted  " href="">建议零售价: ￥ 179,800 元 </a></li>
+                            <li class="list-group-item p-0 border-0 text-center"><a class="bg-white text-muted" href="">动力系统: 1.5L EcoBoost®</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3 ">
+                        <ul class="list-group ">
+                            <li class="list-group-item p-0 border-0 text-center "><img class="w-100" src="d_image/suv/kuga-models.webp"alt=""/></li>
+                            <li class="list-group-item p-0 border-0 text-center " ><h6 class="font-weight-light mb-0"><a class="bg-white text-primary" href="">EcoBoost® 180 两驱豪翼型</a></h6></li>
+                            <li class="list-group-item p-0 border-0 text-center "><a class="bg-white text-muted  " href="">建议零售价： ￥ 192,800 元 </a></li>
+                            <li class="list-group-item p-0 border-0 text-center"><a class="bg-white text-muted" href="">动力系统: 1.5L EcoBoost® </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3 ">
+                        <ul class="list-group ">
+                            <li class="list-group-item p-0 border-0 text-center "><img class="w-100" src="d_image/suv/kuga-models.webp"alt=""/></li>
+                            <li class="list-group-item p-0 border-0 text-center " ><h6 class="font-weight-light mb-0"><a class="bg-white text-primary" href="">EcoBoost® 245 四驱豪翼型</a></h6></li>
+                            <li class="list-group-item p-0 border-0 text-center "><a class="bg-white text-muted  " href="">建议零售价： ￥ 219,800 元 </a></li>
+                            <li class="list-group-item p-0 border-0 text-center"><a class="bg-white text-muted" href="">动力系统: 2.0L EcoBoost® </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <div class="row m-0 bg-white">
+                    <div class="col-3">
+                        <ul class="list-group ">
+                            <li class="list-group-item p-0 border-0 text-center "><img class="w-100" src="d_image/suv/kuga-models.webp"alt=""/></li>
+                            <li class="list-group-item p-0 border-0 text-center " ><h6 class="font-weight-light mb-0"><a class="  bg-white text-primary" href="">EcoBoost® 245 四驱豪翼型</a></h6></li>
+                            <li class="list-group-item p-0 border-0 text-center "><a class=" bg-white text-muted  " href="">建议零售价： ￥ 219,800 元  </a></li>
+                            <li class="list-group-item p-0 border-0 text-center"><a class="bg-white text-muted" href="">动力系统: 2.0L EcoBoost®  </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul class="list-group ">
+                            <li class="list-group-item p-0 border-0 text-center "><img class="w-100" src="d_image/suv/kuga-models.webp"alt=""/></li>
+                            <li class="list-group-item p-0 border-0 text-center " ><h6 class="font-weight-light mb-0"><a class="  bg-white text-primary" href="">EcoBoost® 245 四驱运动型</a></h6></li>
+                            <li class="list-group-item p-0 border-0 text-center "><a class=" bg-white text-muted  " href="">建议零售价： ￥ 229,800 元  </a></li>
+                            <li class="list-group-item p-0 border-0 text-center"><a class="bg-white text-muted" href="">动力系统: 2.0L EcoBoost®</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul class="list-group ">
+                            <li class="list-group-item p-0 border-0 text-center "><img class="w-100" src="d_image/suv/kuga-models.webp"alt=""/></li>
+                            <li class="list-group-item p-0 border-0 text-center " ><h6 class="font-weight-light mb-0"><a class="  bg-white text-primary" href="">EcoBoost® 245 四驱尊翼型</a></h6></li>
+                            <li class="list-group-item p-0 border-0 text-center "><a class=" bg-white text-muted  " href="">建议零售价： ￥ 249,800 元 </a></li>
+                            <li class="list-group-item p-0 border-0 text-center"><a class="bg-white text-muted" href="">动力系统: 2.0L EcoBoost®  </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul class="list-group ">
+                            <li class="list-group-item p-0 border-0 text-center "><img class="w-100" src="d_image/suv/kuga-models.webp"alt=""/></li>
+                            <li class="list-group-item p-0 border-0 text-center " ><h6 class="font-weight-light mb-0"><a class="  bg-white text-primary" href="">翼虎特别版</a></h6></li>
+                            <li class="list-group-item p-0 border-0 text-center "><a class=" bg-white text-muted  " href="">建议零售价： ￥ 185,800 元  </a></li>
+                            <li class="list-group-item p-0 border-0 text-center"><a class="bg-white text-muted" href="">动力系统: 1.5L EcoBoost®  </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- 2左右箭头-->
+        <div>
+            <a data-slide="next" href="#demo2" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+            <a data-slide="prev" href="#demo2" class="carousel-control-next">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+
+        </div>
+        <!-- 3播放指示器-->
+        <ul class="carousel-indicators pt-5 ">
+            <li data-target="#demo2"  class="active"></li>
+            <li data-target="#demo2"  class="active" ></li>
+        </ul>
+    </div>
+    <div class="bord position-relative">
+        <div class="desktop hiderForMobile position-absolute text-center mt-5">
+              <h4 class="text-white">纵情驾驭智能之选</h4>
+             <p>
+                 <a class="btn px-5" href="# ">预约驾驶</a>
+                 <a class="btn px-5" href="#">定制车辆</a>
+                 <a class="btn px-5" href="#">产品手册下载</a>
+             </p>
+        </div>
+        <img class="w-100" src="d_image/suv/image.imgs.full.high(7).jpg" alt=""/>
+    </div>
+    <!-- 条款说明 折叠效果-->
+    <div>
+        <div class="text-center mt-5 mb-5 table-bordered bg-white">
+            <button data-target="#item" data-toggle="collapse" class="  btn   text-white">条款说明
+               <a href="#item"  class="btn active">&xvee;</a>
+                <a href="#item"  class="btn">&xwedge;</a>
+            </button>
+        </div>
+        <div id="item" class="collapse ">
+          <p class="font-small "> [1]     因拍摄时光线或显示器分辨率不同等因素影响，难免存       在一定色差。车体外观颜色以实车为准，敬请谅解。
+          </p>
+            <p class="font-small ">
+                [2]     以上价格与配置仅供参考！欲了解实际交易价格和更多情况，请与当地经销商联系!
+            </p>
+        </div>
+    </div>
+</div>
+<!--footer-->
+<footer>
+    <iframe class="my_footer w-100" src="../footer.html" frameborder="0" scrolling="no"></iframe>
+</footer>
+</body>
+</html>
