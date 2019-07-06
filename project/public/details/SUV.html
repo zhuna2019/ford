@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/comm.css"/>
     <link rel="stylesheet" href="../main.css"/>
     <link rel="stylesheet" href="../css/suv.css"/>
-    <link rel="stylesheet" href="../css/car.css"/>
+    
     <!-- 导入3个js,有顺序要求-->
     <script src="../js/jquery.min.js"></script>
     <script src="../js/popper.min.js"></script>
@@ -285,9 +285,10 @@
     <!-- 条款说明 折叠效果-->
     <div>
         <div class="text-center mt-5 mb-5 table-bordered bg-white">
-            <button data-target="#item" data-toggle="collapse" class="  btn   text-white">条款说明
-               <a href="#item"  class="btn active">&xvee;</a>
-                <a href="#item"  class="btn">&xwedge;</a>
+            <button data-target="#item" data-toggle="collapse" class=" btn ">
+                <a class=" text-white" href="#item">条款说明</a>
+               <a href="#item"  class=" px-2 text-white active">&xvee;</a>
+                <a href="#item"  class="px-2 text-white">&xwedge;</a>
             </button>
         </div>
         <div id="item" class="collapse ">

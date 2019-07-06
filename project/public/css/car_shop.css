@@ -7,3 +7,15 @@
     height:4rem;
 
 }
+.circle{
+    width:30px;
+    height:30px;
+    border: 1px solid #dee2e6 !important;
+    border-radius: 50%;
+    text-align: center;
+}
+.bg{
+    background-color: #023a50;
+    outline:0;
+    border:0;
+}

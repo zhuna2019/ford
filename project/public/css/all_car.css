@@ -1,7 +1,11 @@
 .circle{
+    width:30px;
+    height:30px;
     border: 1px solid #dee2e6 !important;
     border-radius: 50%;
+    text-align: center;
 }
+
 .product{
     background-color:#0d96cd!important;
 }
@@ -23,6 +27,7 @@ ul{
 }
 .desc_full:hover{
     border:1px solid #000;
+    
 }
 .desc_full h5{
     color:#0d96cd;
@@ -31,4 +36,18 @@ ul{
     color:#000;
     background-color: #fff;
     border:1px solid #000;
+}
+.mt-5{
+    margin-top:150px !important;
+}
+
+.desc_full img:hover{
+    translate: transform 1s; 
+    transform: scale(2);
+   
+}
+.bg{
+    background-color: #023a50;
+    outline:0;
+    border:0;
 }
