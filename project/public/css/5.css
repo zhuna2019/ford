@@ -1,0 +1,19 @@
+
+li span{color:red}
+.vali_info{/* 页面初始，验证消息不显示 */
+	display:none;
+}
+
+/* ��֤��Ϣ����֤ͨ��ʱ����ʽ */
+.vali_success{
+  display:none;
+}
+/* ��֤��Ϣ����֤ʧ��ʱ����ʽ */
+.vali_fail{
+  display:block;
+    color:Red;
+  
+.font-small{
+  font-size:8px;
+}
+
