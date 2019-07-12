@@ -16,6 +16,7 @@
     <script src="../js/jquery.min.js"></script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    
     <style>
 
     </style>
@@ -25,7 +26,7 @@
 <div class="container ">
     
     <div class="form-inline pt-3  w-100 bg">
-        <div class="col-2 "><img class="w-100" src="logo1.png" alt=""/></div>
+        <div class="col-2 "><a href="index.html" ><img class="w-100" src="logo1.png" alt=""/></a></div>
         <div class="col-10  ">
             <div class="navbar navbar-expand-md    ">
                 <button data-toggle="collapse" data-target="#content"       class="navbar-toggler">
@@ -100,7 +101,7 @@
                             </a>
                         </div>
                         <div class="float-left tile text-center">
-                            <a href="#"> <img class=" model_shot" src="imges/header/new-kuga.webp" alt=""/>
+                            <a href="details/SUV.html"> <img class=" model_shot" src="imges/header/new-kuga.webp" alt=""/>
                                 <div class="title_container">新福特翼虎</div>
                             </a>
                         </div>
@@ -396,21 +397,29 @@
                         <li class="nav-item px-2"> <div>车型*</div>
                             <select name="type" id="Vehicle_type" class="w-100 p-2">
                                 <option  selected>选择一个车型</option>
-                                <option  >福特福睿斯</option>
-                                <option  >福特新福睿斯</option>
-                            </select></li>
-                        <li class="nav-item px-2"> <div>系列*</div>
-                            <select name="type" id="series" class="w-100 p-2">
-                                <option  selected>选择一个系列</option>
                                 <option >福克斯手动时尚型</option>
                                 <option  >福睿斯手动舒适型</option>
-                            </select></li>
+                                <option  >福特新蒙迪欧</option>
+                                <option  >福特金牛座</option>
+                            </select><br />
+                            <span  class="vali_info">选择一个车型</span>
+                        </li>
+                        <li class="nav-item px-2"> <div>系列*</div>
+                            <select name="sers" id="series" class="w-100 p-2">
+                                <option  selected>选择一个系列</option>
+                                
+                            </select>
+                    
+                        </li>
                         <li class="nav-item px-2"> <div>你打算什么时候买车？*</div>
-                            <select name="type" id="buy_time" class="w-100  p-2">
+                            <select name="time" id="buy_time" class="w-100  p-2">
                                 <option  selected>选择时间</option>
                                 <option  >0-3月</option>
                                 <option  >4-6月</option>
-                            </select></li>
+                            </select>
+
+                        
+                        </li>
                     </ul>
 
                 </div>
@@ -476,12 +485,12 @@
                 <div class="modal-footer  w-100 ">
                    <div class="footer">
                        <h2 class="mt-5">确认</h2>
-                       <div class="mt-5"><input type="checkbox"/>
+                       <div class="mt-5"><input id="chb" type="checkbox"/>
                        <span class="font-small" >我已满18周岁且已完全理解并接受福特汽车（中国）有限公司的 <a href="#">隐私政策</a>；我同意福特及其供应商通过此邮件地址或电话号码联系我。</span>
                        <span id="danger" class="vali_info font-small">这是必填栏</span>
                     </div>
                        <h6 class="font-small mt-5 ">＊标记为必填项</h6>
-                       <button data-dismiss="modal" class="btn  mt-5 "  onclick="reContect()">预约试驾</button>
+                       <button id="bt" class="btn  mt-5 "  >预约试驾</button>
                    </div>
 
                 </div>
@@ -491,140 +500,5 @@
     </div>
 </div>
 </body>
-<script>
-// 验证
-
-//1. 查找触发事件的元素
-var txtName=document.getElementsByName("username")[0];
-var txtph=document.getElementsByName("ph")[0];
-//2. 绑定事件处理函数
-/*文本框失去焦点，验证当前文本框的内容，修改提示信息的样式*/
-//为姓名文本框绑定失去焦点事件
-txtName.onblur=function(){
-	//定义正则表达式
-	var reg= /^[\u4E00-\u9FA5A-Za-z]+$/;
-	//this->txtName
-	//调用公共的验证方法vali
-	vali.call( this ,reg);
-}           //  |   ↓
-function vali(/*|*/reg){
-	//            ↓
-	//this -> window->call->txtName
-	//查找当前文本框旁边的span
-	var span=this.nextElementSibling;
-							//下一个兄弟
-							
-	//如果正则验证文本框的内容通过
-	if(reg.test(this.value)==true){
-		span.className="vali_success";
-	
-	}else{//否则
-		//就修改span的内容
-	
-        span.className="vali_fail";
-	}
-}
-txtph.onblur=function(){
-	//定义正则表达式
-	var reg=/^\d{11}$/;
-	//this->txtPwd
-	//调用公共的验证方法vali
-	vali.call( this ,reg);
-
-}
-    // 数据库获取提交数据
-    // 获取确认选框元素
-    var chb=document.querySelector(".footer>div>input");
-    var span=document.getElementById("danger");
-   
-    function reContect(){
-        //1获取xhr对象
-			var xhr=new XMLHttpRequest()
-			//4绑定监听
-			xhr.onreadystatechange=function(){
-			    if (xhr.readyState==4 && xhr.status==200)
-			    {     
-            var result=xhr.responseText
-						if (result==1){
-                      document.write(`<h1 style="color:red">预约成功</h1>`);
-                      window.location.href="static.html"
-					}else document.write("预约失败");
-                   
-				}
-			}
-			//2打开链接创建请求
-			xhr.open("post","/user/v1/reContect",true);
-			//3发送请求
-			//创建请求头
-			xhr.setRequestHeader("content-Type","application/x-www-form-urlencoded")
-			//创建请求主体
-			var formdate="Vehicle_type="+Vehicle_type.value+"&series="+series.value+"&buy_time="+buy_time.value+"&province="+province.value+"&city="+city.value+"&choice_dis="+choice_dis.value+"&is_drive="+is_drive.value+"&appe="+appe.value+"&user_name="+user_name.value+"&uphone="+uphone.value+"&uemail="+uemail.value
-			xhr.send(formdate)
-    }
-
-
-    /*实现“省”和“市”的级联下拉列表*/
-	var cities=[
-       [{"name":'合肥市',"value":101},
-       {"name":'蚌埠市',"value":102},
-       {"name":'阜阳市',"value":103},
-       {"name":'滁州市',"value":104}],
-      [{"name":'杭州市',"value":201},
-       {"name":'衢州市',"value":202},
-       {"name":'金华市',"value":203},
-       {"name":'宁波市',"value":204},
-       {"name":'台州市',"value":205}],
-      [{"name":'东城区',"value":301},
-       {"name":'西城区',"value":302},
-       {"name":'海淀区',"value":303},
-       {"name":'朝阳区',"value":304}],
-      [{"name":'河东区',"value":401},
-       {"name":'河西区',"value":402},
-       {"name":'南开区',"value":403}],
-      [{"name":'石家庄市',"value":501},
-       {"name":'廊坊市',"value":502},
-       {"name":'保定市',"value":503},
-       {"name":'唐山市',"value":504},
-       {"name":'秦皇岛市',"value":504}]
-	];
-//找到name为provs的select元素
-var selProvs=document.getElementsByName("provs")[0];
-//找到name为cities的select元素
-var selCts=document.getElementsByName("cities")[0];
-//当provs中选中的省份发生变化时
-selProvs.onchange=function(){
-  //获得当前选中省份的下标位置i
-  var i=this.selectedIndex;//当前选中项在所有<option>中的下标
-  //创建文档片段frag
-  var frag=document.createDocumentFragment();
-    //创建<option>=请选择=，并追加到frag中
-    var opt=document.createElement("option");
-    opt.innerHTML="选择一个省";
-    frag.appendChild(opt);
-  //只有点的不是第一项=请选择=时，才继续执行下列操作
-  if(i>0){
-    //去cities数组中获得i-1位置的子数组
-    var cts=cities[i-1];
-    
-    //遍历cts中每个城市对象
-    for(var c of cts){
-      //每遍历一个城市对象，就创建一个<option>元素，设置起内容为城市名
-      var opt=document.createElement("option");
-      opt.innerHTML=c.name;
-      //并将新<option>追加到frag中
-      frag.appendChild(opt);
-    }//(遍历结束)
-    //在添加新内容前，先清空selCts的旧内容
-    selCts.innerHTML="";
-    //将frag整体追加到selCts中
-    selCts.appendChild(frag);
-    //让第二个select显示出来
-  }else{//否则，如果点的是=请选择=
-   //在添加新内容前，先清空selCts的旧内容
-   selCts.innerHTML="";
-    //追加请选择的frag追加到selCts中
-    selCts.appendChild(frag);
-  }
-}
- </script>
+<script src="js/static.js"></script>
 </html>
