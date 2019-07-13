@@ -13,6 +13,7 @@
     <script src="../js/jquery.min.js"></script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    
 
     <style>
          div>.desktop{
@@ -103,21 +104,16 @@
         <h3 class="">搜寻经销商</h3>
         <p class="">*位置不能位空</p>
         <div class="col-12">
-            <select name="position" id="p1">
-                <option value="0" class="checked">选择一个省市*</option>
-                <option value="1">安徽</option>
-                <option value="2">北京</option>
-                <option value="3">重庆</option>
-                <option value="4">浙江</option>
-                <option value="5">江苏</option>
+            <select name="provs" name="position" id="p1">
+                <option selected>选择一个省</option><!--0-->
+                <option >安徽省</option><!--1-->
+                <option  >浙江省</option><!--2-->
+                <option>北京市</option><!--3-->
+                <option>天津市</option><!--4-->
+                <option>河北省</option><!--5-->
             </select>
-            <select name="position" id="p2">
-                <option value="0" class="checked">选择一个地区*</option>
-                <option value="1">安徽</option>
-                <option value="2">北京</option>
-                <option value="3">重庆</option>
-                <option value="4">浙江</option>
-                <option value="5">江苏</option>
+            <select name="cities"  name="position" id="p2">
+                <option selected>选择一个市</option><!--0-->
             </select>
         </div>
         <button class="btn  mt-5 mb-5 " >
@@ -160,4 +156,97 @@
     
 </div>
 </body>
+<script>
+    /*实现“省”和“市”的级联下拉列表*/
+	var cities=[
+       [{"name":'合肥市',"value":101},
+       {"name":'蚌埠市',"value":102},
+       {"name":'阜阳市',"value":103},
+       {"name":'滁州市',"value":104}],
+      [{"name":'杭州市',"value":201},
+       {"name":'衢州市',"value":202},
+       {"name":'金华市',"value":203},
+       {"name":'宁波市',"value":204},
+       {"name":'台州市',"value":205}],
+      [{"name":'东城区',"value":301},
+       {"name":'西城区',"value":302},
+       {"name":'海淀区',"value":303},
+       {"name":'朝阳区',"value":304}],
+      [{"name":'河东区',"value":401},
+       {"name":'河西区',"value":402},
+       {"name":'南开区',"value":403}],
+      [{"name":'石家庄市',"value":501},
+       {"name":'廊坊市',"value":502},
+       {"name":'保定市',"value":503},
+       {"name":'唐山市',"value":504},
+       {"name":'秦皇岛市',"value":504}]
+	];
+    var srs=[
+        [
+            {"name":'三厢1.6 AT 舒适型(智行版)',"value":101},
+            {"name":'三厢1.6 MT 舒适型(智行版)',"value":102},
+            {"name":'三厢EcoBoost® 125 AT超能风尚型(智行版)',"value":103},
+            {"name":'三厢1.6 MT 风尚型(智行版)',"value":104}
+        ],
+        [
+            {"name":"三厢1.6 AT 舒适型(智行版)","value":201},
+            {"name":"三厢1.6 MT 舒适型(智行版)","value":202},
+            {"name":"三厢EcoBoost® 125 AT超能风尚型(智行版)","value":203},
+            {"name":"三厢1.6 MT 风尚型(智行版)","value":204}
+        ],
+        [
+            {"name":"三厢1.6 AT 舒适型(智行版)","value":301},
+            {"name":"三厢1.6 MT 舒适型(智行版)","value":302},
+            {"name":"三厢EcoBoost® 125 AT超能风尚型(智行版)","value":303},
+            {"name":"三厢1.6 MT 风尚型(智行版)","value":304}
+        ],
+        [
+            {"name":"三厢1.6 AT 舒适型(智行版)","value":401},
+            {"name":"三厢1.6 MT 舒适型(智行版)","value":402},
+            {"name":"三厢EcoBoost® 125 AT超能风尚型(智行版)","value":403},
+            {"name":"三厢1.6 MT 风尚型(智行版)","value":404}
+        ]
+    ];
+//找到name为provs的select元素
+var selProvs=document.getElementsByName("provs")[0];
+
+//找到name为cities的select元素
+var selCts=document.getElementsByName("cities")[0];
+
+//当provs中选中的省份发生变化时
+selProvs.onchange=function(){
+  //获得当前选中省份的下标位置i
+  var i=this.selectedIndex;//当前选中项在所有<option>中的下标
+  //创建文档片段frag
+  var frag=document.createDocumentFragment();
+    //创建<option>=请选择=，并追加到frag中
+    var opt=document.createElement("option");
+    opt.innerHTML="选择一个市";
+    frag.appendChild(opt);
+  //只有点的不是第一项=请选择=时，才继续执行下列操作
+  if(i>0){
+    //去cities数组中获得i-1位置的子数组
+    var cts=cities[i-1];
+    
+    //遍历cts中每个城市对象
+    for(var c of cts){
+      //每遍历一个城市对象，就创建一个<option>元素，设置起内容为城市名
+      var opt=document.createElement("option");
+      opt.innerHTML=c.name;
+      //并将新<option>追加到frag中
+      frag.appendChild(opt);
+    }//(遍历结束)
+    //在添加新内容前，先清空selCts的旧内容
+    selCts.innerHTML="";
+    //将frag整体追加到selCts中
+    selCts.appendChild(frag);
+    //让第二个select显示出来
+  }else{//否则，如果点的是=请选择=
+   //在添加新内容前，先清空selCts的旧内容
+   selCts.innerHTML="";
+    //追加请选择的frag追加到selCts中
+    selCts.appendChild(frag);
+  }
+}
+</script>
 </html>
